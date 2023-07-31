@@ -1,0 +1,26 @@
+* {
+  font-family: "Roboto Serif", serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  color: #b10dc9;
+}
+
+/*Navbar style*/
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-item:hover {
+  background-color: white;
+}
+
+.active {
+  border-bottom: 1px solid #b10dc9;
+}
