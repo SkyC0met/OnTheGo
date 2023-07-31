@@ -1,308 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home Page</title>
-    <!--Required meta tags-->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!--Bootstrap CSS v5.3.0-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>Title</title>
+  <!--Required meta tags-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!--CSS size reference sheet-->
-    <!--<link rel="stylesheet" href="../size.css" />-->
+  <!--Bootstrap CSS v5.3.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  * {
+    overflow-x: hidden;
+  }
+
+  .top {
+    background-image: url('https://img.freepik.com/premium-vector/green-valley_7081-956.jpg?w=1800');
+  }
+
+  .created-wrapper {
+    font-size: 1.2em;
+    width: 20em;
+    border-radius: 0.5em;
+    padding: 4em 2em;
+    border: 1px solid black;
+  }
+
+  .created-rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fa-star {
+    font-size: 1.5em;
+    color: #ffd700;
+  }
+
+  .number {
+    display: block;
+    text-align: center;
+  }
+
+  .bg {
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(#fe3b5a, #fd7914);
+  }
+
+  .wrapper {
+    font-size: 1.2em;
+    width: 25em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    padding: 4em 2em;
+    box-shadow: 0 1.25em 2.5em rgba(18, 0, 76, 0.15);
+  }
+
+  .user-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fa-star {
+    font-size: 1.5em;
+    color: #ffd700;
+  }
+
+  .number {
+    display: block;
+    text-align: center;
+  }
+
+  #submit {
+    display: block;
+    position: relative;
+    background: linear-gradient(#fe3b5a, #fd7914);
+    border: none;
+    padding: 0.8em 2em;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 2em;
+    margin: 1em auto 0 auto;
+    cursor: pointer;
+  }
+
+  #submit:disabled {
+    cursor: not-allowed;
+  }
+
+  #message {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  #submit-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    place-items: center;
+    border-radius: 0.5em;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: grid;
+  }
+</style>
+
+<body>
+  <header class="box">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <img style="height: 70px; width: 120px; object-fit: cover"
+          src="https://images-platform.99static.com/7kyvXcaXuz0bpOhWABV2jGCB3vM=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/103/103661/attachment_103661997" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsedContent"
+          aria-controls="navbarCollapsedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapsedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meet.html">Meet The Animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admission.html">Hours & Admission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div style="height: 100vh;" class="container-fluid p-0 top text-center">
+    <div class="row">
+      <div style="margin-top: 20%;" class="col-6">
+        <h1>Get Closer to Nature: Where Smiles GOat Wild</h1>
+        <h1>@ON THE GO petting zoo</h1>
+      </div>
+      <div style="margin-top: 10%;" class="col-6"><img class="img-fluid" src="./goat-mascot.png" alt="" /></div>
+    </div>
+  </div>
+
+  <div class="container text-center p-5">
+    <h1>Welcome to On The Go Petting Zoo!</h1>
+    <p>
+      Step into a captivating world where friendly animals and joyful laughter
+      await
+    </p>
+    <p>
+      Join us and experience the wonder of the great outdoors right in the
+      heart of the city
+    </p>
+    <p>
+      Come, visit us today, and let the enchantment of our petting zoo fill
+      your day with unforgettable memories.
+    </p>
+  </div>
 
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  </head>
-
-  <style>
-    * {
-          font-family: 'Roboto Serif', serif;
-          padding: 0;
-      margin: 0;
-      overflow-x: hidden;
-        }
-
-        h1 {
-          font-weight: bold;
-          color: #b10dc9;
-        }
-
-        .top {
-          background-image: url('https://img.freepik.com/premium-vector/green-valley_7081-956.jpg?w=1800');
-        }
-    .created-wrapper {
-      font-size: 1.2em;
-      width: 20em;
-      border-radius: 0.5em;
-      padding: 4em 2em;
-      border: 1px solid black;
-    }
-    .created-rating {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .fa-star {
-      font-size: 1.5em;
-      color: #ffd700;
-    }
-    .number {
-      display: block;
-      text-align: center;
-    }
-
-    .bg {
-      position: absolute;
-      height: 50vh;
-      width: 100vw;
-      background: linear-gradient(#fe3b5a, #fd7914);
-    }
-    .wrapper {
-      font-size: 1.2em;
-      width: 25em;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
-      background-color: #ffffff;
-      border-radius: 0.5em;
-      padding: 4em 2em;
-      box-shadow: 0 1.25em 2.5em rgba(18, 0, 76, 0.15);
-    }
-    .user-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .fa-star {
-      font-size: 1.5em;
-      color: #ffd700;
-    }
-    .number {
-      display: block;
-      text-align: center;
-    }
-    #submit {
-      display: block;
-      position: relative;
-      background: linear-gradient(#fe3b5a, #fd7914);
-      border: none;
-      padding: 0.8em 2em;
-      color: #ffffff;
-      font-size: 1.2em;
-      border-radius: 2em;
-      margin: 1em auto 0 auto;
-      cursor: pointer;
-    }
-    #submit:disabled {
-      cursor: not-allowed;
-    }
-    #message {
-      text-align: center;
-      margin-bottom: 2em;
-    }
-    #submit-section {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-color: #ffffff;
-      top: 0;
-      left: 0;
-      place-items: center;
-      border-radius: 0.5em;
-    }
-    .hide {
-      display: none;
-    }
-    .show {
-      display: grid;
-    }
-  </style>
-
-  <body>
-    <header class="box">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand"></a>
-            <img
-              style="height: 70px; width: 120px; object-fit: cover"
-              src="https://images-platform.99static.com/7kyvXcaXuz0bpOhWABV2jGCB3vM=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/103/103661/attachment_103661997"
-            
-            /></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapsedContent"
-            aria-controls="navbarCollapsedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapsedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="meet.html">Meet The Animals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="admission.html">Hours & Admission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
+  <div class="container text-center">
+    <h1>Ratings of our petting zoo</h1>
+    <div class="d-md-flex d-grid">
+      <div class="created-wrapper mx-5 p-2">
+        <div class="container created-rating">
+          <div id="first-star" class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">1</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">2</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid fa-solid"></i>
+            <span class="number">3</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">4</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star"></i>
+            <span class="number">5</span>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <div
-      style="height: 100vh;"
-      class="container-fluid p-0 top text-center"
-    >
-      <div class="row">
-        <div style="margin-top: 20%;" class="col-6">     
-          <h1>Get Closer to Nature: Where Smiles GOat Wild</h1>  
-          <h1>@ON THE GO petting zoo</h1> </div>
-        <div style="margin-top: 10%;" class="col-6"><img
-          class="img-fluid"
-          src="./goat-mascot.png"
-          alt=""
-        /></div>
+        <div class="message">Amazing time here! The staff was knowledgeable and friendly, offering helpful information
+          about each animal and making the visit engaging for both children and adults.</div>
+      </div>
+      <div class="created-wrapper mx-5 p-2">
+        <div class="container created-rating">
+          <div id="first-star" class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">1</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">2</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">3</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">4</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star"></i>
+            <span class="number">5</span>
+          </div>
+        </div>
+        <div class="message">Amazing time here!</div>
+      </div>
+      <div class="created-wrapper mx-5 p-2">
+        <div class="container created-rating">
+          <div id="first-star" class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">1</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">2</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">3</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star fa-solid"></i>
+            <span class="number">4</span>
+          </div>
+          <div class="star-container">
+            <i class="fa-regular fa-star"></i>
+            <span class="number">5</span>
+          </div>
+        </div>
+        <div class="message">Had a few troubles along the way but the staff were amazing and so sos helpful. Highly
+          recommend!</div>
       </div>
     </div>
-
-    <div class="container text-center p-5">
-      <h1>Welcome to On The Go Petting Zoo!</h1>
-      <p>
-        Step into a captivating world where friendly animals and joyful laughter
-        await
-      </p>
-      <p>
-        Join us and experience the wonder of the great outdoors right in the
-        heart of the city
-      </p>
-      <p>
-        Come, visit us today, and let the enchantment of our petting zoo fill
-        your day with unforgettable memories.
-      </p>
-    </div>
-
-    
-    <div class="container text-center">
-      <h1>Ratings of our petting zoo</h1>
-      <div class="d-md-flex d-grid">
-                  <div class="created-wrapper mx-5 p-2">
-      <div class="container created-rating">
-        <div id="first-star" class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">1</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">2</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid fa-solid"></i>
-          <span class="number">3</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">4</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star"></i>
-          <span class="number">5</span>
-        </div>
-      </div>
-      <div class="message">Amazing time here! The staff was knowledgeable and friendly, offering helpful information about each animal and making the visit engaging for both children and adults.</div>
-    </div>
-    <div class="created-wrapper mx-5 p-2">
-      <div class="container created-rating">
-        <div id="first-star" class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">1</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">2</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">3</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">4</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star"></i>
-          <span class="number">5</span>
-        </div>
-      </div>
-      <div class="message">Amazing time here!</div>
-    </div>
-    <div class="created-wrapper mx-5 p-2">
-      <div class="container created-rating">
-        <div id="first-star" class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">1</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">2</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">3</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star fa-solid"></i>
-          <span class="number">4</span>
-        </div>
-        <div class="star-container">
-          <i class="fa-regular fa-star"></i>
-          <span class="number">5</span>
-        </div>
-      </div>
-      <div class="message">Had a few troubles along the way but the staff were amazing and so sos helpful. Highly recommend!</div>
-    </div>
-      </div>
-      <button
-      style="width: 200px;"
-      type="button"
-      class="btn btn-primary mt-4 mb-5"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
+    <button style="width: 200px;" type="button" class="btn btn-primary mt-4 mb-5" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
       Rate our zoo
     </button>
 
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content wrapper">
           <p id="message">Rate Your Experience</p>
@@ -330,13 +297,8 @@
           </div>
 
           <form>
-            <textarea
-              name="validationTextarea"
-              class="form-control"
-              id="validationTextarea"
-              placeholder="Required example textarea"
-              required
-            ></textarea>
+            <textarea name="validationTextarea" class="form-control" id="validationTextarea"
+              placeholder="Required example textarea" required></textarea>
             <div class="invalid-feedback">
               Please enter a message in the textarea.
             </div>
@@ -349,103 +311,95 @@
         </div>
       </div>
     </div>
-    </div>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const starContainer = document.querySelector(".user-container");
-        const starContainers =
-          starContainer.querySelectorAll(".star-container");
-        const submitButton = document.querySelector("#submit");
-        const message = document.querySelector("#message");
-        const submitSection = document.querySelector("#submit-section");
-        const user = document.getElementById("validationTextarea");
+  </div>
 
-        const updateRating = () => {
-          let rating = 0;
-          starContainers.forEach((star) => {
-            if (star.classList.contains("active")) {
-              rating++;
-            }
-          });
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const starContainer = document.querySelector(".user-container");
+      const starContainers =
+        starContainer.querySelectorAll(".star-container");
+      const submitButton = document.querySelector("#submit");
+      const message = document.querySelector("#message");
+      const submitSection = document.querySelector("#submit-section");
+      const user = document.getElementById("validationTextarea");
 
-          const ratingTexts = [
-            "Terrible",
-            "Bad",
-            "Satisfied",
-            "Good",
-            "Excellent",
-          ];
-          message.innerText =
-            rating > 0 ? ratingTexts[rating - 1] : "Rate Your Experience";
-          submitButton.disabled =
-            rating > 0 && user.checkValidity() ? false : true;
-        };
-
-        // Handle star rating clicks using event delegation
-        starContainer.addEventListener("click", (event) => {
-          const starElement = event.target.closest(".star-container");
-          if (starElement) {
-            const rating = parseInt(
-              starElement.querySelector(".number").textContent
-            );
-            starContainers.forEach((star, index) => {
-              if (index < rating) {
-                star.classList.add("active");
-                star.classList.remove("inactive");
-                star.querySelector("i").className =
-                  "fa-regular fa-star fa-solid";
-              } else {
-                star.classList.remove("active");
-                star.classList.add("inactive");
-                star.querySelector("i").className =
-                  "fa-regular fa-star fa-regular";
-              }
-            });
-            updateRating();
+      const updateRating = () => {
+        let rating = 0;
+        starContainers.forEach((star) => {
+          if (star.classList.contains("active")) {
+            rating++;
           }
         });
 
-        // Handle user message validation
-        user.addEventListener("input", () => {
+        const ratingTexts = [
+          "Terrible",
+          "Bad",
+          "Satisfied",
+          "Good",
+          "Excellent",
+        ];
+        message.innerText =
+          rating > 0 ? ratingTexts[rating - 1] : "Rate Your Experience";
+        submitButton.disabled =
+          rating > 0 && user.checkValidity() ? false : true;
+      };
+
+      // Handle star rating clicks using event delegation
+      starContainer.addEventListener("click", (event) => {
+        const starElement = event.target.closest(".star-container");
+        if (starElement) {
+          const rating = parseInt(
+            starElement.querySelector(".number").textContent
+          );
+          starContainers.forEach((star, index) => {
+            if (index < rating) {
+              star.classList.add("active");
+              star.classList.remove("inactive");
+              star.querySelector("i").className =
+                "fa-regular fa-star fa-solid";
+            } else {
+              star.classList.remove("active");
+              star.classList.add("inactive");
+              star.querySelector("i").className =
+                "fa-regular fa-star fa-regular";
+            }
+          });
           updateRating();
-        });
-
-        // Handle submit button click
-        submitButton.addEventListener("click", () => {
-          submitSection.classList.remove("hide");
-          submitSection.classList.add("show");
-          submitButton.disabled = true;
-          const comment = user.value;
-          console.log("User comment:", comment);
-          console.log(message.innerHTML);
-        });
-
-        // Initialize the form state
-        updateRating();
-        submitSection.classList.add("hide");
+        }
       });
-    </script>
+
+      // Handle user message validation
+      user.addEventListener("input", () => {
+        updateRating();
+      });
+
+      // Handle submit button click
+      submitButton.addEventListener("click", () => {
+        submitSection.classList.remove("hide");
+        submitSection.classList.add("show");
+        submitButton.disabled = true;
+        const comment = user.value;
+      });
+
+      // Initialize the form state
+      updateRating();
+      submitSection.classList.add("hide");
+    });
+  </script>
 
 
-    <!--Bootstrap Popper v2.11.8-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!--Bootstrap Popper v2.11.8-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <!--Bootstrap JS v5.3.0-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
+  <!--Bootstrap JS v5.3.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
 
-    <!--Font awesome icons-->
-    <script
-      src="https://kit.fontawesome.com/c42ec0d4e5.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--Font awesome icons-->
+  <script src="https://kit.fontawesome.com/c42ec0d4e5.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
