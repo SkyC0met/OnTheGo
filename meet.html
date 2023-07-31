@@ -1,446 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!--Required meta tags-->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!--Bootstrap CSS v5.3.0-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>Title</title>
+  <!--Required meta tags-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="../size.css" />
-  </head>
+  <!--Bootstrap CSS v5.3.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
-  <style>
-        .hide {
-          transform: scale(0);
-        }
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        .minus {
-          margin-top: -80px;
-          transition: margin-top 0.5s;
-        }
+<style>
+  .hide {
+    transform: scale(0);
+  }
 
-        .storage {
-          transition: 0.5s;
-        }
+  .minus {
+    margin-top: -80px;
+    transition: margin-top 0.5s;
+  }
 
-        * {
-          font-family: 'Roboto Serif', serif;
-          background-color: #f5f5f5"
-        }
+  .storage {
+    transition: 0.5s;
+  }
 
-        h1 {
-          font-weight: bold;
-        }
 
-    .card-img-top {
-      height: 200px; object-fit: cover;
-      object-position: 0% 10%;
-    }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+  }
 
-        .btn {
-          background-color: #b10dc9;
-          color: #ffdd00;
-        }
+  .btn {
+    background-color: #b10dc9;
+    color: #ffdd00;
+  }
 
-        .btn:hover {
-          background-color: #370040;
-          color: #ffdd00;
-        }
-  </style>
+  .btn:hover {
+    background-color: #370040;
+    color: #ffdd00;
+  }
+</style>
 
-  <body onscroll="myFunction()">
-    <header class="box z-3">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand"></a>
-            <img
-              style="height: 70px; width: 120px; object-fit: cover"
-              src="https://images-platform.99static.com/7kyvXcaXuz0bpOhWABV2jGCB3vM=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/103/103661/attachment_103661997"
-            
-            /></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapsedContent"
-            aria-controls="navbarCollapsedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapsedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="meet.html">Meet The Animals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="admission.html">Hours & Admissions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-          </div>
+<body onscroll="myFunction()">
+  <header class="box z-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand"></a>
+        <img style="height: 70px; width: 120px; object-fit: cover"
+          src="https://images-platform.99static.com/7kyvXcaXuz0bpOhWABV2jGCB3vM=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/103/103661/attachment_103661997" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsedContent"
+          aria-controls="navbarCollapsedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapsedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="meet.html">Meet The Animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admission.html">Hours & Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <div class="storage">
-      <nav
-      style="background-color: #b10dc9;"
-        id="navbar-example2"
-        class="navbar sticky-top justify-content-center mb-3 z-1"
-      >
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">Third</a>
-          </li>
-        </ul>
-      </nav>
-      <div
-        data-bs-spy="scroll"
-        data-bs-target="#navbar-example2"
-        data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true"
-        class="scrollspy-example bg-body-tertiary p-3 rounded-2"
-        tabindex="0"
-      >
-        <div class="container">
-          <h1 style="color: rgb(171, 136, 91)" id="scrollspyHeading1">
-            Welcome to Teensy Town!
-          </h1>
-          <hr />
-          <h4>Teensy Town houses rabbits and guinea pigs</h4>
-          <h4>Come by to play, pet and feed these adorable furry friends</h4>
-          <div class="p-3">
-            <div class="row d-grid d-md-flex justify-content-center">
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://media.istockphoto.com/id/628986384/photo/portrait-of-cute-red-guinea-pig.jpg?s=612x612&w=0&k=20&c=zWQkTGb_wMxTak-TIIRYQbRTFuslmrXDumAuyTcf3-E="
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Gizmo</h5>
-                    <h5 class="card-title">The Cuddler</h5>
+  <div class="storage">
+    <nav style="background-color: #b10dc9;" id="navbar-example2" class="navbar sticky-top justify-content-center z-1">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">Third</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <div class="container">
+        <h1 style="color: rgb(171, 136, 91)" id="scrollspyHeading1">
+          Welcome to Teensy Town!
+        </h1>
+        <hr />
+        <h4>Teensy Town houses rabbits and guinea pigs</h4>
+        <h4>Come by to play, pet and feed these adorable furry friends</h4>
+        <div class="p-3">
+          <div class="row d-grid d-md-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://media.istockphoto.com/id/628986384/photo/portrait-of-cute-red-guinea-pig.jpg?s=612x612&w=0&k=20&c=zWQkTGb_wMxTak-TIIRYQbRTFuslmrXDumAuyTcf3-E="
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Gizmo</h5>
+                  <h5 class="card-title">The Cuddler</h5>
 
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#gizmoModal"
-                    >
-                      Learn More
-                    </button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gizmoModal">
+                    Learn More
+                  </button>
 
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="gizmoModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Gizmo
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://media.istockphoto.com/id/628986384/photo/portrait-of-cute-red-guinea-pig.jpg?s=612x612&w=0&k=20&c=zWQkTGb_wMxTak-TIIRYQbRTFuslmrXDumAuyTcf3-E="
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Gizmo absolutely loves being around humans! Whenever
-                            visitors come to the petting zoo, he eagerly
-                            approaches them with his adorable wheeks and
-                            squeaks, seeking attention and cuddles. He enjoys
-                            gentle strokes and often sits contentedly on
-                            people's laps, basking in all the affection he
-                            receives.
-                          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="gizmoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Gizmo
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://guineapigsandy.com/wp-content/uploads/2021/09/unnamed-file-16.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Pippin</h5>
-                    <h5 class="card-title">The Gourmet Connoisseur</h5>
-
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#pippinModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="pippinModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Pippin
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://guineapigsandy.com/wp-content/uploads/2021/09/unnamed-file-16.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Pippin adores food! Whether it's fresh veggies like
-                            crisp lettuce and juicy carrots or tasty hay and
-                            crunchy pellets, Pippin can't resist indulging in
-                            the scrumptious delights. It's a delightful sight to
-                            see Pippin munching away happily, and his joyous
-                            "wheek-wheeks" are his way of expressing gratitude
-                            for the delicious treats!
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://petkeen.com/wp-content/uploads/2021/02/guinea-pig.webp"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Midnight</h5>
-                    <h5 class="card-title">The Shy One</h5>
-
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#midnightModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="midnightModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Midnight
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://petkeen.com/wp-content/uploads/2021/02/guinea-pig.webp"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Midnight is more reserved and hesitant than her
-                            siblings, especially around new people or in
-                            unfamiliar environments. When approached, Midnight
-                            may retreat to the safety of a cozy hiding spot or
-                            burrow into some soft bedding. However, once
-                            Midnight becomes familiar with her human friends,
-                            she starts to warm up and display her curious and
-                            affectionate nature.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="hide"
-                class="col-lg-4 col-md-6 col mb-3 d-none d-md-block"
-              >
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://images.ctfassets.net/mlpi10u03bra/2a21DCvM2Nu5WiLI6ru3Xp/0ecc933bdbe79ddd762fbd1832bf5cd0/Rabbit_Vaccinations_Featured_Image_Updated.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cottontail</h5>
-                    <h5 class="card-title">The Silly One</h5>
-
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#cottontailModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="cottontailModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Cottontail
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://images.ctfassets.net/mlpi10u03bra/2a21DCvM2Nu5WiLI6ru3Xp/0ecc933bdbe79ddd762fbd1832bf5cd0/Rabbit_Vaccinations_Featured_Image_Updated.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Cottontail is the epitome of silliness! This
-                            adorable little fluffball has a penchant for the
-                            comical and quirky. Whether it's hopping around in
-                            playful zig-zags, doing bunny binkies with
-                            uncontainable joy, or engaging in hilarious antics
-                            during playtime, Cottontail never fails to bring a
-                            smile to everyone's face.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="hide2"
-                class="col-lg-4 col-md-6 col mb-3 d-none d-md-block"
-              >
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://i.natgeofe.com/n/95140430-92fc-49df-a453-c91743348f93/87132.jpg?w=1272&h=954"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Thumper</h5>
-                    <h5 class="card-title">The Cool One</h5>
-
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#thumperModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="thumperModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Thumper
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://i.natgeofe.com/n/95140430-92fc-49df-a453-c91743348f93/87132.jpg?w=1272&h=954"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Thumper is the epitome of coolness! This suave and
-                            charismatic bunny has a laid-back demeanor that sets
-                            them apart from the rest. Thumper effortlessly
-                            exudes confidence with every hop and bounce, and
-                            their cool and collected attitude makes them the
-                            center of attention wherever they go.
-                          </div>
+                        <img
+                          src="https://media.istockphoto.com/id/628986384/photo/portrait-of-cute-red-guinea-pig.jpg?s=612x612&w=0&k=20&c=zWQkTGb_wMxTak-TIIRYQbRTFuslmrXDumAuyTcf3-E="
+                          alt="" />
+                        <div class="modal-body">
+                          Gizmo absolutely loves being around humans! Whenever
+                          visitors come to the petting zoo, he eagerly
+                          approaches them with his adorable wheeks and
+                          squeaks, seeking attention and cuddles. He enjoys
+                          gentle strokes and often sits contentedly on
+                          people's laps, basking in all the affection he
+                          receives.
                         </div>
                       </div>
                     </div>
@@ -448,178 +145,163 @@
                 </div>
               </div>
             </div>
-            <div class="btn d-block d-md-none" onclick="show()">View All</div>
-          </div>
-        </div>
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img src="https://guineapigsandy.com/wp-content/uploads/2021/09/unnamed-file-16.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Pippin</h5>
+                  <h5 class="card-title">The Gourmet Connoisseur</h5>
 
-        <div class="container">
-          <h1 style="color: rgba(100, 255, 165, 0.524)" id="scrollspyHeading2">
-            Welcome to Medows!
-          </h1>
-          <hr />
-          <h4>Medows houses lambs and goats</h4>
-          <h4>Come by to play, pet and feed these adorable furry friends</h4>
-          <div class="p-3">
-            <div class="row d-grid d-md-flex justify-content-center">
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://a-z-animals.com/media/2022/01/cropped-lamb-grazing-on-green-grass-meadow-picture-id665494268.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Daisy</h5>
-                    <h5 class="card-title">The Excited One</h5>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pippinModal">
+                    Learn More
+                  </button>
 
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#daisyModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="daisyModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Daisy
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://a-z-animals.com/media/2022/01/cropped-lamb-grazing-on-green-grass-meadow-picture-id665494268.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Daisy is the epitome of excitable energy. From the moment she was born, her sprightly and lively nature was apparent. Her soft, white fleece bounces with every skip and jump she takes, adding to her adorable charm. Whenever she spots something new or interesting, her eyes widen with excitement, and her little tail wags with delight.
-                          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="pippinModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Pippin
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="https://guineapigsandy.com/wp-content/uploads/2021/09/unnamed-file-16.jpg" alt="" />
+                        <div class="modal-body">
+                          Pippin adores food! Whether it's fresh veggies like
+                          crisp lettuce and juicy carrots or tasty hay and
+                          crunchy pellets, Pippin can't resist indulging in
+                          the scrumptious delights. It's a delightful sight to
+                          see Pippin munching away happily, and his joyous
+                          "wheek-wheeks" are his way of expressing gratitude
+                          for the delicious treats!
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Willow</h5>
-                    <h5 class="card-title">The Agile One</h5>
+            </div>
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img src="https://petkeen.com/wp-content/uploads/2021/02/guinea-pig.webp" class="card-img-top"
+                  alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Midnight</h5>
+                  <h5 class="card-title">The Shy One</h5>
 
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#willowModal"
-                    >
-                      Learn More
-                    </button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#midnightModal">
+                    Learn More
+                  </button>
 
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="willowModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Willow
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Willow is incredibly agile. With nimble hooves and a keen sense of balance, he moves gracefully across rocky terrains and climbs steep slopes with ease. Whether it's navigating through a maze of fallen logs or leaping from one boulder to another, Willow seems to have an inherent ability to handle challenging landscapes with finesse.
-                          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="midnightModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Midnight
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="https://petkeen.com/wp-content/uploads/2021/02/guinea-pig.webp" alt="" />
+                        <div class="modal-body">
+                          Midnight is more reserved and hesitant than her
+                          siblings, especially around new people or in
+                          unfamiliar environments. When approached, Midnight
+                          may retreat to the safety of a cozy hiding spot or
+                          burrow into some soft bedding. However, once
+                          Midnight becomes familiar with her human friends,
+                          she starts to warm up and display her curious and
+                          affectionate nature.
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://images2.minutemediacdn.com/image/upload/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2FiStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Jasper</h5>
-                    <h5 class="card-title">The Playful One</h5>
+            </div>
+            <div id="hide" class="col-lg-4 col-md-6 col mb-3 d-none d-md-block">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://images.ctfassets.net/mlpi10u03bra/2a21DCvM2Nu5WiLI6ru3Xp/0ecc933bdbe79ddd762fbd1832bf5cd0/Rabbit_Vaccinations_Featured_Image_Updated.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cottontail</h5>
+                  <h5 class="card-title">The Silly One</h5>
 
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#jasperModal"
-                    >
-                      Learn More
-                    </button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cottontailModal">
+                    Learn More
+                  </button>
 
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="jasperModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Jasper
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://images2.minutemediacdn.com/image/upload/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2FiStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Jasper is renowned for being the most playful and mischievous member of the entire goat herd. From dawn till dusk, he can be found engaging in all sorts of entertaining antics that keep the other goats amused and on their hooves. His playful charm is a constant reminder of the joy that can be found in the simplest of moments.
-                          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="cottontailModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Cottontail
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img
+                          src="https://images.ctfassets.net/mlpi10u03bra/2a21DCvM2Nu5WiLI6ru3Xp/0ecc933bdbe79ddd762fbd1832bf5cd0/Rabbit_Vaccinations_Featured_Image_Updated.jpg"
+                          alt="" />
+                        <div class="modal-body">
+                          Cottontail is the epitome of silliness! This
+                          adorable little fluffball has a penchant for the
+                          comical and quirky. Whether it's hopping around in
+                          playful zig-zags, doing bunny binkies with
+                          uncontainable joy, or engaging in hilarious antics
+                          during playtime, Cottontail never fails to bring a
+                          smile to everyone's face.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="hide2" class="col-lg-4 col-md-6 col mb-3 d-none d-md-block">
+              <div class="card" style="width: 18rem">
+                <img src="https://i.natgeofe.com/n/95140430-92fc-49df-a453-c91743348f93/87132.jpg?w=1272&h=954"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Thumper</h5>
+                  <h5 class="card-title">The Cool One</h5>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#thumperModal">
+                    Learn More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="thumperModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Thumper
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="https://i.natgeofe.com/n/95140430-92fc-49df-a453-c91743348f93/87132.jpg?w=1272&h=954"
+                          alt="" />
+                        <div class="modal-body">
+                          Thumper is the epitome of coolness! This suave and
+                          charismatic bunny has a laid-back demeanor that sets
+                          them apart from the rest. Thumper effortlessly
+                          exudes confidence with every hop and bounce, and
+                          their cool and collected attitude makes them the
+                          center of attention wherever they go.
                         </div>
                       </div>
                     </div>
@@ -628,121 +310,52 @@
               </div>
             </div>
           </div>
+          <div class="btn d-block d-md-none" onclick="show()">View All</div>
         </div>
+      </div>
 
-        <div class="container">
-          <h1 style="color: rgb(75, 75, 75, 0.524)" id="scrollspyHeading3">
-            Welcome to Hay Stacks!
-          </h1>
-          <hr />
-          <h4>Hay Stacks houses ponies</h4>
-          <h4>Come by to play, pet and ride these adorable furry friends</h4>
-          <div class="p-3">
-            <div class="row d-grid d-md-flex justify-content-center">
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://scontent.fsin7-1.fna.fbcdn.net/v/t1.18169-9/27654828_959584244192575_3412024021197011740_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=l7IHIaeMwvYAX-rQeCj&_nc_ht=scontent.fsin7-1.fna&oh=00_AfBY-HZ_MVkx853JFAne1vDbgWjB8ydaSNTerljhSXLTOA&oe=64EE711A"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Moonbeam</h5>
-                    <h5 class="card-title">The Sweet One</h5>
+      <div class="container">
+        <h1 style="color: rgba(100, 255, 165, 0.524)" id="scrollspyHeading2">
+          Welcome to Medows!
+        </h1>
+        <hr />
+        <h4>Medows houses lambs and goats</h4>
+        <h4>Come by to play, pet and feed these adorable furry friends</h4>
+        <div class="p-3">
+          <div class="row d-grid d-md-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://a-z-animals.com/media/2022/01/cropped-lamb-grazing-on-green-grass-meadow-picture-id665494268.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Daisy</h5>
+                  <h5 class="card-title">The Excited One</h5>
 
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#moonbeamModal"
-                    >
-                      Learn More
-                    </button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#daisyModal">
+                    Learn More
+                  </button>
 
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="moonbeamModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Moonbeam
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://scontent.fsin7-1.fna.fbcdn.net/v/t1.18169-9/27654828_959584244192575_3412024021197011740_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=l7IHIaeMwvYAX-rQeCj&_nc_ht=scontent.fsin7-1.fna&oh=00_AfBY-HZ_MVkx853JFAne1vDbgWjB8ydaSNTerljhSXLTOA&oe=64EE711A"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Moonbeam is exceptionally sweet and gentle. She has a calming aura that puts everyone at ease, making her a favorite among children and adults alike. Her soft, silver mane sparkles like the night sky, and her eyes radiate warmth and kindness. Moonbeam loves to nuzzle and share affection with anyone who comes her way, and her playful nature often brings smiles to the faces of those around her.
-                          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="daisyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Daisy
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col mb-3">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.zoobasel.ch/uploads/images/news/fotos/shetlandpony_cacahuete_Z6B5123.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Thunderstrike</h5>
-                    <h5 class="card-title">The Curious One</h5>
-
-                    <!-- Button trigger modal -->
-                    <button
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#thunderstrikeModal"
-                    >
-                      Learn More
-                    </button>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="thunderstrikeModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Thunderstrike
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <img
-                            src="https://www.zoobasel.ch/uploads/images/news/fotos/shetlandpony_cacahuete_Z6B5123.jpg"
-                            alt=""
-                          />
-                          <div class="modal-body">
-                            Thunderstrikeis known for his insatiable curiosity. From a young age, he displayed an eagerness to explore and discover the world around him. Whenever there's a new object, sound, or scent, Thunderstrike can't help but investigate with wide eyes and a twitching nose. This curiosity often leads him on adventures beyond the confines of their pasture, with their hooves carrying him to far-off lands as they seek new experiences. 
-                          </div>
+                        <img
+                          src="https://a-z-animals.com/media/2022/01/cropped-lamb-grazing-on-green-grass-meadow-picture-id665494268.jpg"
+                          alt="" />
+                        <div class="modal-body">
+                          Daisy is the epitome of excitable energy. From the moment she was born, her sprightly and
+                          lively nature was apparent. Her soft, white fleece bounces with every skip and jump she takes,
+                          adding to her adorable charm. Whenever she spots something new or interesting, her eyes widen
+                          with excitement, and her little tail wags with delight.
                         </div>
                       </div>
                     </div>
@@ -750,53 +363,218 @@
                 </div>
               </div>
             </div>
-            <div class="btn d-block d-md-none" onclick="show()">View All</div>
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Willow</h5>
+                  <h5 class="card-title">The Agile One</h5>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#willowModal">
+                    Learn More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="willowModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Willow
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg"
+                          alt="" />
+                        <div class="modal-body">
+                          Willow is incredibly agile. With nimble hooves and a keen sense of balance, he moves
+                          gracefully across rocky terrains and climbs steep slopes with ease. Whether it's navigating
+                          through a maze of fallen logs or leaping from one boulder to another, Willow seems to have an
+                          inherent ability to handle challenging landscapes with finesse.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2FiStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Jasper</h5>
+                  <h5 class="card-title">The Playful One</h5>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jasperModal">
+                    Learn More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="jasperModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Jasper
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img
+                          src="https://images2.minutemediacdn.com/image/upload/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2FiStock-177369626-1-0e8d40eaabe65d2cb2d745ef45f09229.jpg"
+                          alt="" />
+                        <div class="modal-body">
+                          Jasper is renowned for being the most playful and mischievous member of the entire goat herd.
+                          From dawn till dusk, he can be found engaging in all sorts of entertaining antics that keep
+                          the other goats amused and on their hooves. His playful charm is a constant reminder of the
+                          joy that can be found in the simplest of moments.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <h1 style="color: rgb(75, 75, 75, 0.524)" id="scrollspyHeading3">
+          Welcome to Hay Stacks!
+        </h1>
+        <hr />
+        <h4>Hay Stacks houses ponies</h4>
+        <h4>Come by to play, pet and ride these adorable furry friends</h4>
+        <div class="p-3">
+          <div class="row d-grid d-md-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://scontent.fsin7-1.fna.fbcdn.net/v/t1.18169-9/27654828_959584244192575_3412024021197011740_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=l7IHIaeMwvYAX-rQeCj&_nc_ht=scontent.fsin7-1.fna&oh=00_AfBY-HZ_MVkx853JFAne1vDbgWjB8ydaSNTerljhSXLTOA&oe=64EE711A"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Moonbeam</h5>
+                  <h5 class="card-title">The Sweet One</h5>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#moonbeamModal">
+                    Learn More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="moonbeamModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Moonbeam
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img
+                          src="https://scontent.fsin7-1.fna.fbcdn.net/v/t1.18169-9/27654828_959584244192575_3412024021197011740_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=l7IHIaeMwvYAX-rQeCj&_nc_ht=scontent.fsin7-1.fna&oh=00_AfBY-HZ_MVkx853JFAne1vDbgWjB8ydaSNTerljhSXLTOA&oe=64EE711A"
+                          alt="" />
+                        <div class="modal-body">
+                          Moonbeam is exceptionally sweet and gentle. She has a calming aura that puts everyone at ease,
+                          making her a favorite among children and adults alike. Her soft, silver mane sparkles like the
+                          night sky, and her eyes radiate warmth and kindness. Moonbeam loves to nuzzle and share
+                          affection with anyone who comes her way, and her playful nature often brings smiles to the
+                          faces of those around her.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col mb-3">
+              <div class="card" style="width: 18rem">
+                <img src="https://www.zoobasel.ch/uploads/images/news/fotos/shetlandpony_cacahuete_Z6B5123.jpg"
+                  class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Thunderstrike</h5>
+                  <h5 class="card-title">The Curious One</h5>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#thunderstrikeModal">
+                    Learn More
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="thunderstrikeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Thunderstrike
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <img src="https://www.zoobasel.ch/uploads/images/news/fotos/shetlandpony_cacahuete_Z6B5123.jpg"
+                          alt="" />
+                        <div class="modal-body">
+                          Thunderstrikeis known for his insatiable curiosity. From a young age, he displayed an
+                          eagerness to explore and discover the world around him. Whenever there's a new object, sound,
+                          or scent, Thunderstrike can't help but investigate with wide eyes and a twitching nose. This
+                          curiosity often leads him on adventures beyond the confines of their pasture, with their
+                          hooves carrying him to far-off lands as they seek new experiences.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn d-block d-md-none" onclick="show()">View All</div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script>
-      function myFunction() {
-        const hide = document.querySelector(".box");
-        const storage = document.querySelector(".storage");
-        console.log(document.documentElement.scrollTop);
-        if (document.documentElement.scrollTop >= 80) {
-          hide.classList.add("hide");
-          storage.classList.add("minus");
-        } else {
-          hide.classList.remove("hide");
-          storage.classList.remove("minus");
-        }
+  <script>
+    function myFunction() {
+      const hide = document.querySelector(".box");
+      const storage = document.querySelector(".storage");
+      if (document.documentElement.scrollTop >= 80) {
+        hide.classList.add("hide");
+        storage.classList.add("minus");
+      } else {
+        hide.classList.remove("hide");
+        storage.classList.remove("minus");
       }
+    }
 
-      const hide = document.getElementById("hide");
-      const hide2 = document.getElementById("hide2");
+    const hide = document.getElementById("hide");
+    const hide2 = document.getElementById("hide2");
 
-      function show() {
-        hide.classList.toggle("d-none");
-        hide2.classList.toggle("d-none");
-      }
-    </script>
+    function show() {
+      hide.classList.toggle("d-none");
+      hide2.classList.toggle("d-none");
+    }
+  </script>
 
-    <!--Bootstrap Popper v2.11.8-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!--Bootstrap Popper v2.11.8-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <!--Bootstrap JS v5.3.0-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
+  <!--Bootstrap JS v5.3.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
 
-    <!--Font awesome icons-->
-    <script
-      src="https://kit.fontawesome.com/c42ec0d4e5.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--Font awesome icons-->
+  <script src="https://kit.fontawesome.com/c42ec0d4e5.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
